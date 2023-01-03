@@ -5,6 +5,7 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from inference import responseChat
 import nltk
+import os
 nltk.download('punkt')
 
 from load_model import model_load
@@ -20,6 +21,8 @@ class BodyRequest(BaseModel):
 
 @app.get("/", response_class=HTMLResponse)
 async def read_item(request: Request):
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    print(dir_path)
     return templates.TemplateResponse("index.html", {"request": request, "message": "Oke"})
 
 
