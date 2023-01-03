@@ -1,6 +1,9 @@
 
 # 💮 Tsundere Chat Simulator 💮
 #### Warning!! ⛔️ : Cringe project 100%
+<p>App Link: 
+<a href="https://tsunderesimulatorchat.000webhostapp.com/">Tsundere Simulator Website</a>
+</p>
 <img src="https://media.tenor.com/DRqm5MskvK0AAAAd/kaguya-kaguyasama.gif" width="50%">
 
 <p>Tsundere chat Simulator adalah sebuah chat dengan bot yang bernama Sinomiya. Melalui simulator ini, kalian berperan sebagai senpai yang disukai oleh Sinomiya 💞. Melalui simulasi ini kalian akan merasakan bagaimana rasanya chattan dengan cewek tsundere seperti yang ada di anime.
