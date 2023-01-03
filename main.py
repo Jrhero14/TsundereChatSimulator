@@ -4,6 +4,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from inference import responseChat
+import nltk
+nltk.download('punkt')
 
 from load_model import model_load
 model = model_load("pkl/GNB_model.sav")
