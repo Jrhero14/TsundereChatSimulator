@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8b1e47e-fcb4-4190-8fb6-1479e53b130d" name="Changes" comment="" />
+    <list default="true" id="b8b1e47e-fcb4-4190-8fb6-1479e53b130d" name="Changes" comment="Railways Deployment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,16 +19,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JoWPKUftRu2RwFpPlS7759rW1Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -79,11 +86,56 @@
       <workItem from="1672748151053" duration="472000" />
       <workItem from="1672748997371" duration="2300000" />
       <workItem from="1672752517312" duration="1125000" />
+      <workItem from="1672753651103" duration="4008000" />
     </task>
+    <task id="LOCAL-00001" summary="Deployment Configuration">
+      <created>1672754879010</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672754879010</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Nltk download punkt">
+      <created>1672754941839</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672754941839</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Railways Deployment">
+      <created>1672756571062</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672756571062</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Railways Deployment fix">
+      <created>1672756662473</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672756662473</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Railways Deployment">
+      <created>1672757393612</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672757393612</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Deployment Configuration" />
+    <MESSAGE value="Nltk download punkt" />
+    <MESSAGE value="Railways Deployment fix" />
+    <MESSAGE value="Railways Deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Railways Deployment" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TsundereChatSimulator$TsundereChatSimulator.coverage" NAME="TsundereChatSimulator Coverage Results" MODIFIED="1672745508913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
