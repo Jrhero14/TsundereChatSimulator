@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tsundere Chat Simulator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/css/jquery.convform.css') }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/css/demo.css') }}">
+</head>
+
+<body>
+	<section id="demo">
+		<div class="vertical-align">
+			<div class="container">
+				<div class="row">
+					<!-- class="col-sm-6 col-sm-offset-3 col-xs-offset-0" -->
+					<div class="col-sm-6 col-lg-push-1">
+						
+						<div class="card no-border">
+							<div id="chat">
+								<form action="" method="GET" class="hidden">
+									<select
+										data-conv-question="Hallo Perkenalkan namaku Sinomiya, apa? senpai mau ngobrol samaku?"
+										name="first-question">
+										<option value="understood">Yes</option>
+										<option value="okay">No</option>
+									</select>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-push-1" style="padding-top: 1%;"><img src="{{ url_for('static', path='/img/sinomiya1.png') }}" alt="" srcset=""></div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="{{ url_for('static', path='/js/jquery-1.12.3.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', path='/js/autosize.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', path='/js/jquery.convform.js') }}"></script>
+
+	<script>
+		async function getApiData(mess) {
+			const response = await fetch('http://127.0.0.1:8000/responseChat', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					"chat_request": mess
+				})
+			});
+			const data = await response.json(); // parse data json
+			return data['message']
+		}
+
+		jQuery(function ($) {
+			var statementStop = false
+			var count = 0;
+			var convForm = $('#chat').convform({
+				eventList: {
+					onInputSubmit: async function (convState, ready) {
+						console.log('input is being submitted...');
+						//here you send the response to your API, get the results and build the next question
+						//when ready, call 'ready' callback (passed as the second parameter)
+						if (convState.current.answer.value === 'end') {
+							convState.current.next = false;
+							//emulating random response time (100-600ms)
+							setTimeout(ready, Math.random() * 500 + 100);
+						} else {
+							if (Array.isArray(convState.current.answer))  {
+								var answer = convState
+								.current.answer.join(', ');
+							}
+							else {
+								var answer = convState.current.answer.text;
+							}
+
+							if (answer == "No"){
+								setTimeout(ready, Math.random() * 9000 + 100);
+							}
+							if (answer == "Yes"){
+								convState.current.next = convState.newState({
+									type: 'text',
+									noAnswer: false,
+									name: 'dynamic-question-' + count,
+									questions: [
+										'Mau ngomong apa humm?'
+									],
+								});
+							}
+							else {
+								convState.current.next = convState.newState({
+									type: 'text',
+									noAnswer: false,
+									name: 'dynamic-question-' + count,
+									questions: [
+										await getApiData(answer)
+									],
+								});
+							}
+							
+							//emulating random response time (100-600ms)
+							setTimeout(ready, Math.random() * 500 + 100);
+						}
+						count++;
+					}
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
