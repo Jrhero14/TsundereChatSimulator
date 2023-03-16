@@ -4,6 +4,9 @@
 <p>App Link: 
 <a href="https://tsunderesimulatorchat.000webhostapp.com/">Tsundere Simulator Website</a>
 </p>
+<p>Telegram Chat: 
+<a href="https://t.me/KaguyaChan_bot">t.me/KaguyaChan_bot</a>
+</p>
 <img src="https://media.tenor.com/DRqm5MskvK0AAAAd/kaguya-kaguyasama.gif" width="50%">
 
 <p>Tsundere chat Simulator adalah sebuah chat dengan bot yang bernama Sinomiya. Melalui simulator ini, kalian berperan sebagai senpai yang disukai oleh Sinomiya 💞. Melalui simulasi ini kalian akan merasakan bagaimana rasanya chattan dengan cewek tsundere seperti yang ada di anime.
@@ -43,5 +46,8 @@ Sinomiya: Tanya saja pada rumput yang bergoyang
 Sinomiya: Ihhhh apa sih....>///<
 
 ## Demo
-<p>Screenshot:</p>
+<p>Screenshot Web App:</p>
 <a href="https://ibb.co/yqkHdgZ"><img src="https://i.ibb.co/kXDN5qw/Screenshot-from-2023-01-03-21-46-09.png" alt="Screenshot-from-2023-01-03-21-46-09" border="0"></a><br /><br />
+
+<p>Screenshot Telegram Chat:</p>
+<a href="https://i.ibb.co/Tmf1nQy/Whats-App-Image-2023-03-16-at-23-23-32.jpg" ><img src="https://i.ibb.co/Tmf1nQy/Whats-App-Image-2023-03-16-at-23-23-32.jpg" alt="Screenshot-from-2023-01-03-21-46-09" border="0" width="40%"></a><br /><br />
